@@ -30,5 +30,7 @@ public class SpringApplication {
         System.out.println(coolProducts);
         List<Product> cheapProducts = productRepository.findProductByUnitPriceBetween(0d, 500d);
         System.out.println(cheapProducts);
+        List<Product> collPcProducts = productRepository.findProductByDescription("cool pc");
+        System.out.println(collPcProducts);
     }
 }
